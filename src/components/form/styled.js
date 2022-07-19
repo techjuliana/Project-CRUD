@@ -36,6 +36,7 @@ display:flex;
 align-items: center;
 input{
     margin-left: 20px;
+    margin-right:5px;
     accent-color:black;
     margin-top:0;
 }
@@ -47,5 +48,5 @@ padding: 5px 10px;
 border: none;
 cursor: pointer;
 color: white;
-background-color: teal;
+background-color: #363b96;
 `
