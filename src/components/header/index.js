@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Container, Title } from "./styled";
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <Container>
+      <Title>Tech Finanças</Title>
+    </Container>
+  );
+};
