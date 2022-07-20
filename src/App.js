@@ -37,13 +37,13 @@ function App() {
     setTransactionsList(newArrayTransactions);
 
     localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
-};
+  };
 
   return (
     <div>
       <Header />
-      <Resume income={income} expense={expense} total={total}/>
-      <Form handleAdd={handleAdd}/>
+      <Resume income={income} expense={expense} total={total} />
+      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
     </div>
   );
 }
