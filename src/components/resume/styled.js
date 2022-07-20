@@ -8,8 +8,11 @@ export const Container = styled.div`
   gap: 20px;
   margin-top: 2rem;
   justify-content: space-around;
-
   svg{
     color:var(--purple);
+  }
+
+  @media (max-width:500px){
+    flex-direction: column;
   }
 `;

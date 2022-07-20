@@ -15,7 +15,6 @@ export const Resume = ({ income, expense, total }) => {
         color="green"
         Icon={FaRegArrowAltCircleUp }
         value={income}
-        // <Icon={FaRegArrowAltCircleUp} color="green" />
       />
       <ResumeItem
         title="Saídas"
