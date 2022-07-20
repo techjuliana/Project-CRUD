@@ -1,14 +1,15 @@
 import React from 'react'
 import { Container, Header, HeaderTitle, Total } from "./styled";
 
-export const ResumeItem = ({title, Icon}) => {
+export 
+const ResumeItem = ({ title, Icon, value }) => {
   return (
     <Container>
       <Header>
-<HeaderTitle>{title}</HeaderTitle>
-      <Icon/>
+        <HeaderTitle>{title}</HeaderTitle>
+        <Icon />
       </Header>
-      <Total>1000</Total>
+      <Total>{value}</Total>
     </Container>
-  )
-}
+  );
+};

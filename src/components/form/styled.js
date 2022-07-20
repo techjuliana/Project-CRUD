@@ -37,7 +37,7 @@ align-items: center;
 input{
     margin-left: 20px;
     margin-right:5px;
-    accent-color:black;
+    accent-color:#363b96;
     margin-top:0;
 }
 `

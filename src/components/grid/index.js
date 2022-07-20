@@ -2,12 +2,14 @@ import React from "react";
 import { Table, Th, Thead, Tr,Tbody } from "./styled";
 import {GridItem} from "../grid-item";
 
-export const Grid = ({ itens, setItens }) => {
- const onDelete = (ID) => {
- const newArray = itens.filter((transaction) => transaction.id !==ID);
- setItens(newArray);
- localStorage.setItem("transactions", JSON.stringify(newArray));
-};
+export 
+
+const Grid = ({ itens, setItens }) => {
+  const onDelete = (ID) => {
+    const newArray = itens.filter((transaction) => transaction.id !== ID);
+    setItens(newArray);
+    localStorage.setItem("transactions", JSON.stringify(newArray));
+  };
 
   return (
     <Table>
@@ -22,10 +24,10 @@ export const Grid = ({ itens, setItens }) => {
         </Tr>
       </Thead>
       <Tbody>
-{itens?.map((item, index)=>(
-  <GridItem key={index} item={item} onDelete={onDelete} />
-))}
+        {itens?.map((item, index) => (
+          <GridItem key={index} item={item} onDelete={onDelete} />
+        ))}
       </Tbody>
     </Table>
   );
-};
+}

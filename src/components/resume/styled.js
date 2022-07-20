@@ -8,4 +8,8 @@ export const Container = styled.div`
   gap: 20px;
   margin-top: -30px;
   justify-content: space-around;
+
+  svg{
+    color:#363b96;
+  }
 `;
