@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 7rem;
+  height: 5rem;
   text-align: center;
-  background: #363b96;
+  background: var(--purple);
 `
 
 export const Title = styled.h1`
  padding-top: 2rem;
- color: white;
+ color: var(--white);
 `

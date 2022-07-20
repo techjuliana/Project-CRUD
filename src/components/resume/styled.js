@@ -6,10 +6,10 @@ export const Container = styled.div`
   display: flex;
   margin: 0 auto;
   gap: 20px;
-  margin-top: -30px;
+  margin-top: 2rem;
   justify-content: space-around;
 
   svg{
-    color:#363b96;
+    color:var(--purple);
   }
 `;

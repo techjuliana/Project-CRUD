@@ -3,7 +3,7 @@ import { Header } from "./components/header";
 import { Resume } from "./components/resume";
 import { Form } from "./components/form";
 
-function App() {
+export default function App() {
   const data = localStorage.getItem("transactions");
   const [transactionsList, setTransactionsList] = useState(
     data ? JSON.parse(data) : []
@@ -43,9 +43,11 @@ function App() {
     <div>
       <Header />
       <Resume income={income} expense={expense} total={total} />
-      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
+      <Form
+        handleAdd={handleAdd}
+        transactionsList={transactionsList}
+        setTransactionsList={setTransactionsList}
+      />
     </div>
   );
 }
-
-export default App;

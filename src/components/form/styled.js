@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: 95%;
   margin: 20px auto;
   width: 98%;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px #ccc;
   border-radius:5px;
   display:flex;
@@ -37,7 +37,7 @@ align-items: center;
 input{
     margin-left: 20px;
     margin-right:5px;
-    accent-color:#363b96;
+    accent-color:var(--purple);
     margin-top:0;
 }
 `
@@ -47,6 +47,6 @@ border-radius:5px;
 padding: 5px 10px;
 border: none;
 cursor: pointer;
-color: white;
-background-color: #363b96;
+color: var(--white);
+background-color: var(--purple);
 `
